@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    /* background-image: linear-gradient(to right top, #634c77, #705786, #7d6295, #8a6da4, #9878b4); */
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}

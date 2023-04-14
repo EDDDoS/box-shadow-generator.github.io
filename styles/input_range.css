@@ -1,0 +1,93 @@
+input[type=range] {
+    width: 100%;
+    margin: 10px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    /* background: rgba(107, 107, 159, 0.4); */
+    /* border: 0.2px solid rgba(136, 122, 190, 0); */
+    /* background-color: #D0B6C7; */
+    border: 0.3px solid #D0B6C7;
+    width: 100%;
+    height: 0px;
+    cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -10.2px;
+    width: 20px;
+    height: 20px;
+    background: #D0B6C7;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #6e6ea1;
+  }
+  input[type=range]::-moz-range-track {
+    background: rgba(107, 107, 159, 0.4);
+    border: 0.2px solid rgba(136, 122, 190, 0);
+    width: 100%;
+    height: 0px;
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #c7b0db;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 10px 0;
+    color: transparent;
+    width: 100%;
+    height: 0px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #68689d;
+    border: 0.2px solid rgba(136, 122, 190, 0);
+  }
+  input[type=range]::-ms-fill-upper {
+    background: rgba(107, 107, 159, 0.4);
+    border: 0.2px solid rgba(136, 122, 190, 0);
+  }
+  input[type=range]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #c7b0db;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: rgba(107, 107, 159, 0.4);
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #6e6ea1;
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+
+
+
+
+  /* .css-checkbox { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }#inputPreview { display: flex; gap: 20px; justify-content: center;	}.css-checkbox + label { position: relative; font-size: 14px; cursor: pointer; display: inline-flex; align-items: center; height: 31px; color: rgb(0, 0, 0); }.css-checkbox + label::before { content: " "; display: inline-block; vertical-align: middle; margin-right: 3px; width: 23px; height: 23px; background-color: rgb(255, 255, 255); border-width: 4px; border-style: solid; border-color: rgb(74, 54, 74); border-radius: 50px; box-shadow: none; }.css-checkbox:checked + label::after { content: " "; background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIiIGQ9Ik0xNzMuODk4IDQzOS40MDRsLTE2Ni40LTE2Ni40Yy05Ljk5Ny05Ljk5Ny05Ljk5Ny0yNi4yMDYgMC0zNi4yMDRsMzYuMjAzLTM2LjIwNGM5Ljk5Ny05Ljk5OCAyNi4yMDctOS45OTggMzYuMjA0IDBMMTkyIDMxMi42OSA0MzIuMDk1IDcyLjU5NmM5Ljk5Ny05Ljk5NyAyNi4yMDctOS45OTcgMzYuMjA0IDBsMzYuMjAzIDM2LjIwNGM5Ljk5NyA5Ljk5NyA5Ljk5NyAyNi4yMDYgMCAzNi4yMDRsLTI5NC40IDI5NC40MDFjLTkuOTk4IDkuOTk3LTI2LjIwNyA5Ljk5Ny0zNi4yMDQtLjAwMXoiLz48L3N2Zz4="); background-repeat: no-repeat; background-size: 10px 10px; background-position: center center; position: absolute; display: flex; justify-content: center; align-items: center; margin-left: 0px; left: 0px; top: 0px; text-align: center; background-color: transparent; font-size: 10px; height: 31px; width: 31px; } */

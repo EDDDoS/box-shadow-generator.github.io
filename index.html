@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/0239039983.js" crossorigin="anonymous"></script>
+    <title>Shadow Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+            <div class="box-preview">
+                <div class="preview">
+                    <p>Container</p>
+                    <div class="code-block">
+                        <textarea name="" id="code"></textarea>
+                    </div>
+                    <button class="copyButton" onclick="copyButton()">Copy</button>
+                </div>
+            </div>
+
+            <div class="controles">
+                <form>
+                    <label for="right">Right / Left <span></span></label>
+                    <input type="range" name="right" id="right" min="-50" max="50" value="0">
+    
+                    <label for="updown">Up / Down <span></span></label>
+                    <input type="range" name="updown" id="updown" min="-50" max="50" value="0">
+    
+                    <label for="spread">Spread <span></span></label>
+                    <input type="range" name="spread" id="spread" min="-50" max="50" value="0">
+                    
+                    <label for="blur">Blur <span></span></label>
+                    <input type="range" name="blur" id="blur" min="0" max="50" value="16">
+    
+                    <label for="opacity">Opaccity <span></span></label>
+                    <input type="range" name="opacity" id="opacity" min="0" max="100" step="1" value="100">
+    
+                    <label for="inset">Inset <span></span></label>
+                    <input type="checkbox" name="inset" id="inset" class="css-checkbox">
+    
+                    <!-- <label for="color">Color</label>
+                    <input type="color" name="color" id="color"> -->
+                </form>
+                
+            </div>
+        </div>
+
+        <footer>
+            By: Gustavo Eduardo
+        </footer>
+        
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
